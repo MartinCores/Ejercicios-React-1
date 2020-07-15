@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React from "react";
 import { text } from "./Padre";
 // HOLA
+=======
+import React from 'react';
+
+// HOLA 2
+>>>>>>> upstream/master
 
 const Hijo = (props) => {
   return (
