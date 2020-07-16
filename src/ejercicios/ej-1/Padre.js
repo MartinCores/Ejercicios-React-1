@@ -1,6 +1,5 @@
 import React from "react";
 import Hijo from "./Hijo";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 const Padre = () => {
   const text = "Hola Mundo";

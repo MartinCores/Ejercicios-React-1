@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const MyState = () => {
-    return (
-        <div className="alert alert-primary">
-            <p>El valor por defecto del estado es: {/* Muestra aquí el valor por defecto del estado */}</p>
-        </div>
-    );
+  const myText = " Hola mundo!";
+  const [state, setState] = useState(myText);
+  return (
+    <div className="alert alert-primary" onClick={this}>
+      <p>El valor por defecto del estado es:{state}</p>
+    </div>
+  );
 };
 
 export default MyState;

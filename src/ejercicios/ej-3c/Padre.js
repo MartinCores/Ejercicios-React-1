@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 import Hijo from "./Hijo";
 
-const Padre = () => {
-    const printCustomText = (text) => {
-        console.log(text);
-    };
-    
+class Padre extends React.Component {
+  printCustomText = () => {
+    console.log("NOOOOOOO!");
+  };
+  render() {
     return (
-        <div className="alert alert-primary">
-            <h4>Padre</h4>
-            <Hijo />
-        </div>
+      <div className="alert alert-primary">
+        <h4>Padre</h4>
+        <Hijo clickMe={this.printCustomText} />
+      </div>
     );
-};
+  }
+}
 
 export default Padre;
